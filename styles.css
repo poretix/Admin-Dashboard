@@ -11,8 +11,42 @@
 .sidebar {
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: blue;
+    background-color: #a5b4fc;
 }
+
+.sidebar-logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 8px;
+    padding-top: 16px;
+}
+
+.sidebar-logo .text {
+    font-size: 1.3rem;
+}
+
+.sidebar-top, .sidebar-bottom {
+    padding-top: 32px;
+    padding-left: 24px;
+}
+
+.sidebar-top li, .sidebar-bottom li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+.sidebar-top img, .sidebar-bottom img {
+    width: 1rem;
+    height: 1rem;
+}
+
 
 .header {
     background-color: orange;
