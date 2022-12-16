@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
@@ -17,14 +17,16 @@
 .sidebar-logo img {
     width: 2rem;
     height: 2rem;
+    filter: invert(92%) sepia(38%) saturate(29%) hue-rotate(232deg) brightness(111%) contrast(100%);
 }
 
 .sidebar-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding-left: 8px;
-    padding-top: 16px;
+    gap: .75rem;
+    padding-left: .75rem;
+    padding-top: 1.25rem;
+    color: white;
 }
 
 .sidebar-logo .text {
@@ -32,33 +34,168 @@
 }
 
 .sidebar-top, .sidebar-bottom {
-    padding-top: 32px;
-    padding-left: 24px;
+    padding-top: 1.75rem;
+    padding-left: 1.5rem;
+    color: white;
 }
 
 .sidebar-top li, .sidebar-bottom li {
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding-bottom: 16px;
+    gap: 1rem;
+    padding-bottom: 1.25rem;
 }
 .sidebar-top img, .sidebar-bottom img {
     width: 1rem;
     height: 1rem;
+    filter: invert(92%) sepia(38%) saturate(29%) hue-rotate(232deg) brightness(111%) contrast(100%);
 }
 
 
 .header {
-    background-color: orange;
+    background-color: white;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
 }
 
-.content-container {
-    height: 400px;
-    background-color: grey;
+.header-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+.header-top-left img, .header-top-right img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.search-bar {
+    background-color:rgba(203, 213, 225, 0.5);
+    width: 30vw;
+    height: 1.75rem;
+    border-radius: 10rem;
+}
+
+.header-top-left {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.header-top-right, .header-bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1.75rem;
+    gap: 2rem;
+}
+
+.header-top-right .profile-circle img {
+    width: 2rem;
+    height: 2rem;
+    padding-left: .25rem;
+}
+
+.profile-circle {
+    background-color: #93c5fd;
+    padding: .25rem;
+    border-radius: 50%;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+}
+
+.header-bottom-left .profile-circle img {
+    width: 4rem;
+    height: 4rem;
+    padding-left: .5rem;
+    padding-top: .25rem;
+}
+
+.greetings {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.greetings .text {
+    font-size: .85rem;
+}
+
+.greetings p {
+    font-size: 1.2rem;
+}
+
+.header-bottom-right button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 3rem;
+    color: white;
+    background-color: #a5b4fc;
+    border-style: none; 
+}
+
+.content-container {
+    background-color: #cbd5e1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 1.5rem;
+    padding-top: 2.5rem;
+}
+
+.content-left .text{
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.cards-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cards-left .card {
+    width: 22.5vw;
+    height: 8rem;
+    background-color: white;
+    padding: 30px;
+    border-left: .5rem solid #fdba74;
+    border-radius: .5rem;
+}
+
+.cards-left .card img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+.information .title {
+    font-weight:bold;
+}
+
+.information p {
+    font-size: .9rem;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.25rem
 }
 
 .content-right {
