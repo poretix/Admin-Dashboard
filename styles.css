@@ -1,6 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'open_sansregular';
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('opensans-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .container {
@@ -56,6 +66,7 @@
     background-color: white;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    margin-bottom: .2rem;
 }
 
 .header-top {
@@ -151,27 +162,31 @@
     grid-template-columns: 2fr 1fr;
     padding-left: 1.5rem;
     padding-top: 2.5rem;
+    gap: 1.25rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.content-left .text{
+.content-left .text, .annoucement .text, .trending .text {
     font-weight: bold;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     font-size: 1.25rem;
 }
 
 .cards-left {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .cards-left .card {
     width: 22.5vw;
-    height: 8rem;
+    height: 7.5rem;
     background-color: white;
     padding: 30px;
     border-left: .5rem solid #fdba74;
     border-radius: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .cards-left .card img {
@@ -185,7 +200,7 @@
 }
 
 .information .title {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .information p {
@@ -202,3 +217,69 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
 }
+
+.annoucement-content {
+    background-color: white;
+    border-radius: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.maintenance-text, .promotion-text {
+    font-weight: bold;
+    font-size: .9rem;
+    border-bottom: 1px solid #cbd5e1;
+    padding-top: 1rem;
+}
+
+.privacy-text {
+    font-weight: bold;
+    font-size: .9rem;
+    padding-top: 1rem;
+}
+
+
+.maintenance-text p, .promotion-text p, .privacy-text p{
+    font-weight: normal;
+    font-size: .75rem;
+    padding-bottom: 1rem;
+}
+
+.trending {
+    padding-top: 2rem;
+}
+
+.trending-information {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.dominican, .japan, .rome {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    gap: .75rem;
+}
+
+.dominican img, .japan img, .rome img {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.dominican .profile-circle, .japan .profile-circle, .rome .profile-circle {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
