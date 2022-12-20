@@ -79,6 +79,10 @@
     height: 1.25rem;
 }
 
+.header-top-right {
+    font-weight: bold;
+}
+
 .search-bar {
     background-color:rgba(203, 213, 225, 0.5);
     width: 30vw;
@@ -145,6 +149,7 @@
 
 .greetings p {
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .header-bottom-right button {
@@ -247,7 +252,7 @@
 }
 
 .trending {
-    padding-top: 2rem;
+    padding-top: 4.5rem;
 }
 
 .trending-information {
@@ -281,5 +286,30 @@
     align-items: center;
 }
 
+.dominican .profile-circle {
+    background-color: #fcd34d;
+}
 
+.japan .profile-circle {
+    background-color: #f9a8d4;
+}
+
+.rome .profile-circle {
+    background-color: #86efac;
+}
+
+@media screen and (min-width: 1200px) {
+    .trending {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 1275px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+    }
+}
 
